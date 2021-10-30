@@ -118,15 +118,29 @@ void _print(map<T, V> v)
 void solve()
 {
 
+    int n;
+    cin >> n;
+    int p;
+    cin >> p;
+    int x[p];
     set<int> s;
-    int k, n = 4;
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < p; ++i)
     {
-
-        cin >> k;
-        s.insert(k);
+        cin >> x[i];
+        s.insert(x[i]);
     }
-    cout << 4 - s.size();
+    int q;
+    cin >> q;
+    int y[q];
+    for (int i = 0; i < q; ++i)
+    {
+        cin >> y[i];
+        s.insert(y[i]);
+    }
+    if (s.size() == n)
+        cout << "I become the guy.";
+    else
+        cout << "Oh, my keyboard!";
 }
 
 int main()

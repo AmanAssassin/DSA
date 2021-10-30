@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 #include <algorithm>
+#include <vector>
 using namespace std;
 
 typedef long long ll;
@@ -118,15 +119,20 @@ void _print(map<T, V> v)
 void solve()
 {
 
-    set<int> s;
-    int k, n = 4;
-    for (int i = 0; i < n; i++)
+    ll t;
+    cin >> t;
+    while (t--)
     {
+        ll a, b;
+        cin >> a >> b;
 
-        cin >> k;
-        s.insert(k);
+        if (a % b == 0)
+            cout << 0 << nline;
+        else
+        {
+            cout << b - (a % b) << nline;
+        }
     }
-    cout << 4 - s.size();
 }
 
 int main()
