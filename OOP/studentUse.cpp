@@ -31,8 +31,11 @@ int main() {
 	Student *s5 = new Student(101);
 	s5 -> display();
 
+	dynamically created
+
 	Student s6(20, 1002);
 	s6.display()
+
 	*/
 	
 }
