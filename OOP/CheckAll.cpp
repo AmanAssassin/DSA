@@ -5,7 +5,7 @@ using namespace std;
 
 int main() {
 
-    Student s1;
+    Student s1;             // Const 1 called
     Student s2(101);
     Student s2(101,1001);
     Student s4(s3);
