@@ -41,7 +41,7 @@ void print(Node *head)
 int main()
 {
 
-    Node *Head = takeInput();
+    Node *Head = takeInput_better();
     print(Head);
     /*
     // statically create Node
