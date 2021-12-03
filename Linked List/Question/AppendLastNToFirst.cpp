@@ -37,7 +37,7 @@ Node *appendLastNToFirst(Node *head, int n)
     int i = 0;
     while (temp != NULL && i < len - n - 1)
     {
-        temp = temp->next;
+        temp = temp->next; 
         i++;
     }
     if (temp != NULL)
