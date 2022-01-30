@@ -1,19 +1,19 @@
 #include <iostream>
 #include <climits>
 using namespace std;
+template <typename T>
 
-template<typename T>
-class Stack_using_Dynamic_array
+class template_use
 {
     T *data;
     int nextIndex;
     int capacity;
 
 public:
-    Stack_using_Dynamic_array()
+    template_use()
     {
-        data = new int[4];
-        nextIndex = 0;
+        data = new T[4];
+        next Index = 0;
         capacity = 4;
     }
 
@@ -30,7 +30,7 @@ public:
         }
         return false;
     }
-    void push(int element)
+    void push(T element)
     {
         if (nextIndex == capacity)
         {
@@ -40,7 +40,7 @@ public:
                 newData[i] = data[i];
             }
             capacity *= 2;
-            delete [] data;
+            delete[] data;
             data = newData;
             // cout << "STACK full" << endl;
             // return;
